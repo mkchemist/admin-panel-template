@@ -1,0 +1,40 @@
+header.bg-white.shadow.px-2 
+
+  <!-- navbar --->
+  nav.navbar.navbar-expand-lg.navbar-light.align-items-center.p-1
+    |
+    <!-- navbar brand and sidebar menu toggler -->
+    div.d-flex.align-items-center.col-lg-auto.col-12 
+      |
+      a.me-2(href="#sidebar",data-toggle="sidebar")
+        span.navbar-toggler-icon
+      |
+      |
+      a.navbar-brand.text-primary(href="#") AdminBoard
+    |
+    |
+    <!-- navbar search container -->
+    div.col-md.col-12.d-flex.justify-content-start.mx-lg-2.me-md-2
+      |
+      input#search.form-control-textplain.search-input.col(type="search" name="search" placeholder="Search...")
+      |
+      button.btn.btn-sm.btn-light.border-bottom(type="button", title="Search")
+        span.text-light-blue(data-feather="search")
+    |
+    |
+    <!-- menu container -->
+    div
+      |
+      <!-- menu -->
+      ul.nav 
+        li.nav-item.col-auto
+          a.nav-link.small.text-muted(href="",title="Notifications")
+            span(data-feather="bell",width=20,height=20)
+        li.nav-item.col-auto
+          a.nav-link.small.text-muted(href="",title="Profile")
+            span(data-feather="user",width=20,height=20)
+        li.nav-item.col-auto
+          a.nav-link.small.text-muted(href="",title="logout")
+            span(data-feather="log-out",width=20,height=20)
+           
+

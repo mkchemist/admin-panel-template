@@ -1,0 +1,17 @@
+header {
+
+
+  .search-input {
+    border:none;
+    border-bottom: 1px solid #1111;
+    transition:.3s;
+    
+    &:focus,&:active {
+      outline: none!important;
+      border-color: $light-blue;
+      border-width: 2px;
+      color: $light-blue;
+      font-size: large;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+|
+<!-- Mail component -->
+form.bg-white.px-2.py-3.shadow(action="")
+  |
+  <!-- email -->
+  .mb-2
+    span(data-feather="at-sign")
+    label.fw-bold(for="mail") E-mail 
+    input.form-control.form-control-sm.my-2(name="mail" type="Email" placeholder="Email address")
+  |
+  |
+  <!-- message -->
+  .mb-2
+    span(data-feather="mail")
+    label.fw-bold(for="mail_message") Message 
+    textarea.form-control.form-control-sm.my-2(name="mail_message" cols="30" rows="5" placeholder="Write a message")
+  hr
+  |
+  |
+  <!-- mail component buttons -->
+  .mb-2
+    button.btn.btn-sm.btn-dark-blue.col-12(type="button")
+      span.mx-2 Send
+      span(data-feather="send",width=15,height=15)

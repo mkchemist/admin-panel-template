@@ -1,0 +1,19 @@
+/* colors */
+$dark-blue:#1F1D36;
+$orange: orangered;
+$light-blue: #63B7AF;
+$white:#f1f1f1;
+$lighter-blue: lighten($light-blue, 40%);
+
+
+
+
+
+/* colors schema */
+
+$colorsSchema: (
+  'dark-blue' : $dark-blue,
+  'orange' : $orange,
+  'light-blue' : $light-blue,
+  'lighter-blue' : $lighter-blue
+);

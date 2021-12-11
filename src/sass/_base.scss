@@ -1,0 +1,28 @@
+/* 
+ * generate helpers from colors schema
+ */
+
+@each $name, $val in $colorsSchema {
+  .bg-#{$name} {
+    background-color: $val !important;
+  }
+  .text-#{$name} {
+    color: $val !important;
+  }
+  .border-#{$name} {
+    border-color: $val !important;
+  }
+  .btn-#{$name} {
+    background-color: $val;
+    color: $white;
+    transition: ease-in-out .3s;
+    &:hover{
+      opacity: .9;
+      color:$white;
+    }
+  }
+}
+
+.small {
+  font-size: .8rem;
+}

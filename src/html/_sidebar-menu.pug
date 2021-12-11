@@ -1,0 +1,23 @@
+- 
+  var menu = [
+    {label: 'Home', title: 'view home page', icon: 'home'},
+    {label: 'Users', title: 'view users page', icon: 'users'},
+    {label: 'Clients', title: 'view clients page', icon: 'coffee'},
+    {label: 'Roles', title: 'view roles page', icon: 'settings'},
+    {label: 'Groups', title: 'view groups page', icon: 'users'},
+    
+  ]
+|
+|
+.sidebar-container
+  |
+  <!-- sidebar-menu -->
+
+  ul.nav 
+    each val in menu
+      |
+      <!-- menu item -->
+      li.nav-item.col-12 
+        a.nav-link.text-light.d-flex.justify-content-between(href="", title=val.title) 
+          span.link-label #{val.label}
+          span.link-icon(data-feather=val.icon)

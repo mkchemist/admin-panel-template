@@ -1,0 +1,31 @@
+div.py-3 
+  div.row.mx-auto.px-lg-1.px-2
+    - 
+      var sections = [
+        {
+          title: 'Sales',
+          icon: 'dollar-sign',
+          color: 'success'
+        },
+        {
+          title: 'Users',
+          icon: 'users',
+          color: 'dark-blue'
+        },
+        {
+          title: 'Roles',
+          icon: 'settings',
+          color: 'primary'
+        },
+        {
+          title: "Client",
+          icon: 'coffee',
+          color: 'orange'
+        }
+      ]
+      
+    each section of  sections
+      .col-lg-3.col-md-6.col-12
+        div.hero-section(style="min-height:100px",class=`border-${section.color}`)
+          p.lead(class=`text-${section.color}`) #{section.title}
+          span(data-feather=section.icon,width=50,height=50,class=`text-${section.color}`)

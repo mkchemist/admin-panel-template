@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/admin.min.css">
+  </head>
+  <body> 
+    <div class="row mx-auto bg-lighter-blue fh-100"> 
+      <section class="sidebar" id="sidebar">
+        <div class="text-end p-2 d-md-none d-block"><a class="me-2 text-light" href="#sidebar" data-toggle="sidebar"><span data-feather="x"></span></a></div>
+        <div class="text-center p-3 sidebar-logo"> <img class="img-fluid rounded-circle shadow" src="images/admin.gif" alt="admin logo"></div>
+        <div class="lead text-light fw-light sidebar-brand"> 
+          <h5 class="fw-light mb-0"> Company Name</h5>
+          <h6 class="fw-light mb-0"> Username</h6>
+          <p class="text-muted small mb-0">person@admin.com</p>
+        </div>
+        <hr class="bg-light">
+        
+        <div class="sidebar-container">
+          <!-- sidebar-menu -->
+          <ul class="nav"> 
+            <!-- menu item -->
+            <li class="nav-item col-12"> <a class="nav-link text-light d-flex justify-content-between" href="" title="view home page"> <span class="link-label">Home</span><span class="link-icon" data-feather="home"></span></a></li>
+            <!-- menu item -->
+            <li class="nav-item col-12"> <a class="nav-link text-light d-flex justify-content-between" href="" title="view users page"> <span class="link-label">Users</span><span class="link-icon" data-feather="users"></span></a></li>
+            <!-- menu item -->
+            <li class="nav-item col-12"> <a class="nav-link text-light d-flex justify-content-between" href="" title="view clients page"> <span class="link-label">Clients</span><span class="link-icon" data-feather="coffee"></span></a></li>
+            <!-- menu item -->
+            <li class="nav-item col-12"> <a class="nav-link text-light d-flex justify-content-between" href="" title="view roles page"> <span class="link-label">Roles</span><span class="link-icon" data-feather="settings"></span></a></li>
+            <!-- menu item -->
+            <li class="nav-item col-12"> <a class="nav-link text-light d-flex justify-content-between" href="" title="view groups page"> <span class="link-label">Groups</span><span class="link-icon" data-feather="users"></span></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="col px-0 mb-3 fh-100">
+        <header class="bg-white shadow px-2">
+           <!-- navbar --->
+          <nav class="navbar navbar-expand-lg navbar-light align-items-center p-1">
+            <!-- navbar brand and sidebar menu toggler -->
+            <div class="d-flex align-items-center col-lg-auto col-12">
+               <a class="me-2" href="#sidebar" data-toggle="sidebar"><span class="navbar-toggler-icon"></span></a>
+              <a class="navbar-brand text-primary" href="#">AdminBoard</a>
+            </div>
+            <!-- navbar search container -->
+            <div class="col-md col-12 d-flex justify-content-start mx-lg-2 me-md-2">
+              <input class="form-control-textplain search-input col" id="search" type="search" name="search" placeholder="Search...">
+              <button class="btn btn-sm btn-light border-bottom" type="button" title="Search"><span class="text-light-blue" data-feather="search"></span></button>
+            </div>
+            <!-- menu container -->
+            <div>
+              <!-- menu -->
+              <ul class="nav"> 
+                <li class="nav-item col-auto"><a class="nav-link small text-muted" href="" title="Notifications"><span data-feather="bell" width="20" height="20"></span></a></li>
+                <li class="nav-item col-auto"><a class="nav-link small text-muted" href="" title="Profile"><span data-feather="user" width="20" height="20"></span></a></li>
+                <li class="nav-item col-auto"><a class="nav-link small text-muted" href="" title="logout"><span data-feather="log-out" width="20" height="20"></span></a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <div class="container mt-5">
+          <div class="container">
+            <p class="text-orange"><span data-feather="sun"></span><span class="mx-2 lead">Good Morning</span></p>
+          </div>
+          <div class="py-3"> 
+            <div class="row mx-auto px-lg-1 px-2">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="hero-section border-success" style="min-height:100px">
+                  <p class="lead text-success">Sales</p><span class="text-success" data-feather="dollar-sign" width="50" height="50"></span>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="hero-section border-dark-blue" style="min-height:100px">
+                  <p class="lead text-dark-blue">Users</p><span class="text-dark-blue" data-feather="users" width="50" height="50"></span>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="hero-section border-primary" style="min-height:100px">
+                  <p class="lead text-primary">Roles</p><span class="text-primary" data-feather="settings" width="50" height="50"></span>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="hero-section border-orange" style="min-height:100px">
+                  <p class="lead text-orange">Client</p><span class="text-orange" data-feather="coffee" width="50" height="50"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-auto mb-3">
+            <div class="col-lg-8 col-md-7">
+              <div class="p-3 bg-white rounded shadow-sm">
+                <p class="lead text-danger"> <span data-feather="alert-circle" width="20" height="20"></span><span> Quick Action</span></p>
+                <p class="small text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo suscipit mollitia ipsam obcaecati alias officiis excepturi blanditiis nisi odio. Maxime omnis iste delectus veritatis inventore eius officiis ratione, quam similique.</p>
+                <div> 
+                  <button class="btn btn-sm btn-success" title="config action"><span data-feather="check" width="20" height="15"></span><span>Confirm</span></button>
+                  <button class="btn btn-sm btn-secondary" title="cancel or deny action"><span data-feather="x" width="20" height="15"></span><span>Deny</span></button>
+                </div>
+              </div>
+              <div class="p-2 bg-white my-2 shadow-sm rounded">
+                <p class="lead"> <span data-feather="dollar-sign"></span><span>Total Sales</span></p>
+                <div class="p-2">
+                  <canvas id="sales_chart" width="400"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-5"> 
+              <!-- Mail component -->
+              <form class="bg-white px-2 py-3 shadow" action="">
+                <!-- email -->
+                <div class="mb-2"><span data-feather="at-sign"></span>
+                  <label class="fw-bold" for="mail">E-mail </label>
+                  <input class="form-control form-control-sm my-2" name="mail" type="Email" placeholder="Email address">
+                </div>
+                <!-- message -->
+                <div class="mb-2"><span data-feather="mail"></span>
+                  <label class="fw-bold" for="mail_message">Message </label>
+                  <textarea class="form-control form-control-sm my-2" name="mail_message" cols="30" rows="5" placeholder="Write a message"></textarea>
+                </div>
+                <hr>
+                <!-- mail component buttons -->
+                <div class="mb-2">
+                  <button class="btn btn-sm btn-dark-blue col-12" type="button"><span class="mx-2">Send</span><span data-feather="send" width="15" height="15"></span></button>
+                </div>
+              </form>
+              
+              <!-- users chat -->
+              <div class="my-2 bg-white p-2 shadow rounded">
+                <!-- users list -->
+                <ul class="nav"> 
+                  <!-- users list item -->
+                  <li class="nav-item col-12 d-flex align-items-center border-bottom mb-1">
+                    <div class="col-2 p-2"><img class="img-fluid rounded-circle w-100" src="images/admin.gif" alt=""></div>
+                    <div class="col mx-2"> 
+                      <p class="mb-0">User 1</p>
+                      <p class="small text-muted mb-0">email@somewhere.com</p>
+                    </div>
+                    <div> <a class="text-orange" href=""> <span data-feather="message-circle"></span></a></div>
+                  </li>
+                  <!-- users list item -->
+                  <li class="nav-item col-12 d-flex align-items-center border-bottom mb-1">
+                    <div class="col-2 p-2"><img class="img-fluid rounded-circle w-100" src="images/admin.gif" alt=""></div>
+                    <div class="col mx-2"> 
+                      <p class="mb-0">User 2</p>
+                      <p class="small text-muted mb-0">email@somewhere.com</p>
+                    </div>
+                    <div> <a class="text-orange" href=""> <span data-feather="message-circle"></span></a></div>
+                  </li>
+                  <!-- users list item -->
+                  <li class="nav-item col-12 d-flex align-items-center border-bottom mb-1">
+                    <div class="col-2 p-2"><img class="img-fluid rounded-circle w-100" src="images/admin.gif" alt=""></div>
+                    <div class="col mx-2"> 
+                      <p class="mb-0">User 3</p>
+                      <p class="small text-muted mb-0">email@somewhere.com</p>
+                    </div>
+                    <div> <a class="text-orange" href=""> <span data-feather="message-circle"></span></a></div>
+                  </li>
+                  <!-- users list item -->
+                  <li class="nav-item col-12 d-flex align-items-center border-bottom mb-1">
+                    <div class="col-2 p-2"><img class="img-fluid rounded-circle w-100" src="images/admin.gif" alt=""></div>
+                    <div class="col mx-2"> 
+                      <p class="mb-0">User 4</p>
+                      <p class="small text-muted mb-0">email@somewhere.com</p>
+                    </div>
+                    <div> <a class="text-orange" href=""> <span data-feather="message-circle"></span></a></div>
+                  </li>
+                  <!-- users list item -->
+                  <li class="nav-item col-12 d-flex align-items-center border-bottom mb-1">
+                    <div class="col-2 p-2"><img class="img-fluid rounded-circle w-100" src="images/admin.gif" alt=""></div>
+                    <div class="col mx-2"> 
+                      <p class="mb-0">User 5</p>
+                      <p class="small text-muted mb-0">email@somewhere.com</p>
+                    </div>
+                    <div> <a class="text-orange" href=""> <span data-feather="message-circle"></span></a></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="libs/bootstrap/dist/js/bootstrap.bundle.min.js"> </script>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/feather-icons/dist/feather.min.js"></script>
+    <script src="libs/chart.js/dist/chart.min.js"></script>
+    <script src="js/admin.js"> </script>
+  </body>
+</html>

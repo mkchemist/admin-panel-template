@@ -1,0 +1,16 @@
+extends _layout
+
+block content 
+  .row.mx-auto.bg-lighter-blue.fh-100 
+    section.sidebar#sidebar
+      include _sidebar
+    section.col.px-0.mb-3.fh-100
+      include _navbar
+   
+      .container.mt-5
+        div.container
+          p.text-orange
+            span(data-feather="sun")
+            span.mx-2.lead Good Morning
+        include _hero-section
+        include _main-section

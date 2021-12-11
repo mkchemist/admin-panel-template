@@ -1,0 +1,19 @@
+|
+|
+<!-- users chat -->
+div.my-2.bg-white.p-2.shadow.rounded
+  |
+  <!-- users list -->
+  ul.nav 
+    - for(let i = 1 ; i <= 5 ; i++)
+      |
+      <!-- users list item -->
+      li.nav-item.col-12.d-flex.align-items-center.border-bottom.mb-1
+        div.col-2.p-2
+          img.img-fluid.rounded-circle.w-100(src="images/admin.gif" alt="")
+        .col.mx-2 
+          p.mb-0 User #{i}
+          p.small.text-muted.mb-0 email@somewhere.com
+        div 
+          a.text-orange(href="") 
+            span(data-feather="message-circle")
